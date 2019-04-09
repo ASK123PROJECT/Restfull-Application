@@ -15,6 +15,7 @@ public class BookResource {
 			@Path("/empid")
 			@Produces({"application/xml","application/json"})
 			public Employee getEmployeeByid(@QueryParam("empid") String empid) {
+				System.out.println("EmployeeResource This is testing in jenkins");
 				System.out.println("EmployeeResource.getEmpByid()");
 				Employee emp=new Employee();
 				emp.setEmpid(Integer.parseInt(empid));
